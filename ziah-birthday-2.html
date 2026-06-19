@@ -897,6 +897,27 @@ button { font-family:inherit; border:none; background:none; cursor:pointer; touc
   transform:translateX(-50%);
   margin:0;
 }
+@media (max-width:768px){
+
+  .player-card{
+    position:relative !important;
+    left:auto !important;
+    right:auto !important;
+    transform:none !important;
+
+    width:min(92vw,340px);
+    margin:0 auto !important;
+  }
+
+  .player-wrap,
+  .player-container,
+  .player-shell{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+  }
+}
 </style>
 </head>
 <body>
