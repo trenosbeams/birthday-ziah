@@ -885,38 +885,40 @@ button { font-family:inherit; border:none; background:none; cursor:pointer; touc
   }
 }
 /* Center Music Card */
+/* MUSIC CARD FIX */
 .sec-2{
   display:flex;
   flex-direction:column;
   align-items:center;
+  overflow-x:hidden;
 }
 
 .player-card{
+  width:min(100%,380px);
+  max-width:380px;
+  margin:0 auto;
   position:relative;
-  left:50%;
-  transform:translateX(-50%);
-  margin:0;
+  left:auto;
+  transform:none;
 }
+
 @media (max-width:768px){
 
-  .player-card{
-    position:relative !important;
+.sec-2{
+    padding-left:16px;
+    padding-right:16px;
+}
+
+.player-card{
+    width:100%;
+    max-width:340px;
+    margin:0 auto;
     left:auto !important;
     right:auto !important;
     transform:none !important;
+}
 
-    width:min(92vw,340px);
-    margin:0 auto !important;
-  }
 
-  .player-wrap,
-  .player-container,
-  .player-shell{
-    width:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-  }
 }
 </style>
 </head>
